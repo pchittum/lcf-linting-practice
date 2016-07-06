@@ -1,0 +1,1398 @@
+[32m'Search for "**/*.js" in folder "."'[39m
+[32m' -> Ignoring: **/node_modules/**,**/jsdoc/**,**/htdocs/**,**/invalidTest/**,**/purposelyInvalid/**,**/invalidTestData/**,**/validationTest/**,**/lintTest/**,**/target/**,**/parseError/**,**/*.junk.js,**/*_mock?.js'[39m
+Found 19 matching files.
+----------------
+FILE: /Users/pchittum/Stuff/git/lcf-16/metadata/aura/AccountViewEdit/AccountViewEditController.js:
+
+  warning    no-unused-vars    'helper' is defined but never used  
+  Line:2:37
+  	doInit: function(component, event, helper) {
+  	                                    ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:3:1
+  		
+  	^
+
+  warning     comma-spacing    A space is required after ','       
+  Line:5:26
+  		action.setCallback(this,function(a){
+  		                        ^
+
+  warning     comma-spacing    A space is required after ','       
+  Line:7:29
+  				component.set('v.acctId',a.getReturnValue());
+  				                         ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:8:69
+  				//component.find('acctId').set('v.recordId',a.getReturnValue());				
+  				                                                                	^
+
+  error        no-console      Unexpected console statement        
+  Line:10:5
+  				console.log('that did not work');
+  				 ^
+
+
+✖ 6 problems (1 error, 5 warnings)
+
+FILE: /Users/pchittum/Stuff/git/lcf-16/metadata/aura/ActionServiceStudy1/ActionServiceStudy1Controller.js:
+
+  warning    no-unused-vars    'helper' is defined but never used  
+  Line:2:38
+  	doInit : function(component, event, helper) {
+  	                                     ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:5:1
+          
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:6:1
+  		
+  	^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:8:1
+          
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:19:1
+          
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:3:1
+          
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:17:1
+              
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:13:1
+              
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:15:1
+              
+   ^
+
+  warning     comma-spacing    A space is required after ','       
+  Line:16:39
+              component.set('v.expenses',respData);
+                                         ^
+
+  warning    no-unused-vars    'self' is defined but never used    
+  Line:9:13
+          var self = this;
+               ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:21:1
+          
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:10:1
+          
+   ^
+
+  error        no-console      Unexpected console statement        
+  Line:12:13
+              console.log('entered callback');
+               ^
+
+  error        no-console      Unexpected console statement        
+  Line:4:9
+          console.log('entered init');
+           ^
+
+
+✖ 15 problems (2 errors, 13 warnings)
+
+FILE: /Users/pchittum/Stuff/git/lcf-16/metadata/aura/ContactList/ContactListController.js:
+
+  warning    no-unused-vars    'event' is defined but never used  
+  Line:2:34
+      doInit : function(component, event) {
+                                    ^
+
+  warning    no-unused-vars    'event' is defined but never used  
+  Line:20:39
+      linkToRecord: function(component, event) {
+                                         ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed        
+  Line:24:1
+          
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed        
+  Line:31:1
+          
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed        
+  Line:32:3
+  	}    
+  	  ^
+
+  error        no-console      Unexpected console statement       
+  Line:21:9
+          console.log("ExpenseCardController.linktToRecord: enter");
+           ^
+
+  error        no-console      Unexpected console statement       
+  Line:23:9
+          console.log("ExpenseCardController.linkToRecord: expense= "+id);
+           ^
+
+
+✖ 7 problems (2 errors, 5 warnings)
+
+FILE: /Users/pchittum/Stuff/git/lcf-16/metadata/aura/ExpenseCard/ExpenseCardController.js:
+
+  warning  no-trailing-spaces  Trailing spaces not allowed                       
+  Line:3:1
+      
+   ^
+
+  warning    no-spaced-func    Unexpected space between function name and paren  
+  Line:8:17
+          console.log ("ExpenseCardController received msg = "+event.getParams().msg+" acct= "+expense.Name);
+                   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed                       
+  Line:33:1
+      
+   ^
+
+  warning    no-spaced-func    Unexpected space between function name and paren  
+  Line:9:17
+          console.log ("ExpenseCardController component = "+component);
+                   ^
+
+  warning    no-unused-vars    'event' is defined but never used                 
+  Line:35:39
+      linkToRecord: function(component, event) {
+                                         ^
+
+  warning     comma-spacing    A space is required after ','                     
+  Line:12:29
+          component.set("v.id",expense.Id);
+                               ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed                       
+  Line:32:1
+      
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed                       
+  Line:21:1
+          
+   ^
+
+  warning    no-spaced-func    Unexpected space between function name and paren  
+  Line:14:17
+          console.log ("ExpenseCardController id link = "+link);
+                   ^
+
+  warning    no-unused-vars    'helper' is defined but never used                
+  Line:5:57
+      onExpenseSelectedEvent : function(component, event, helper) {
+                                                           ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed                       
+  Line:39:1
+          
+   ^
+
+  warning     comma-spacing    A space is required after ','                     
+  Line:17:40
+          component.set("v.expenseAmount",expense.Amount__c);
+                                          ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed                       
+  Line:10:1
+          
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed                       
+  Line:46:1
+          
+   ^
+
+  warning     comma-spacing    A space is required after ','                     
+  Line:16:38
+          component.set("v.expenseName",expense.Name);
+                                        ^
+
+  error        no-console      Unexpected console statement                      
+  Line:14:9
+          console.log ("ExpenseCardController id link = "+link);
+           ^
+
+  error        no-console      Unexpected console statement                      
+  Line:28:9
+          console.log("ExpenseCardController.onExpenseSelectedEvent: setting count");
+           ^
+
+  error        no-console      Unexpected console statement                      
+  Line:30:9
+          console.log("ExpenseCardController.onExpenseSelectedEvent: exit");
+           ^
+
+  error       no-script-url    Script URL is a form of eval                      
+  Line:13:20
+          var link = "javascript:sforce.one.navigateToSObject("+expense.Id+")";
+                      ^
+
+  error        no-console      Unexpected console statement                      
+  Line:9:9
+          console.log ("ExpenseCardController component = "+component);
+           ^
+
+  error        no-console      Unexpected console statement                      
+  Line:8:9
+          console.log ("ExpenseCardController received msg = "+event.getParams().msg+" acct= "+expense.Name);
+           ^
+
+  error        no-console      Unexpected console statement                      
+  Line:36:9
+          console.log("ExpenseCardController.linktToRecord: enter");
+           ^
+
+  error        no-console      Unexpected console statement                      
+  Line:38:9
+          console.log("ExpenseCardController.linkToRecord: expense= "+id);
+           ^
+
+  error        no-console      Unexpected console statement                      
+  Line:6:9
+          console.log("ExpenseCardController.onExpenseSelectedEvent: entered");
+           ^
+
+
+✖ 24 problems (9 errors, 15 warnings)
+
+FILE: /Users/pchittum/Stuff/git/lcf-16/metadata/aura/ExpenseItemList/ExpenseItemListController.js:
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:4:1
+         
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:6:1
+          
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:7:52
+  		//Fetch the expense list from the Apex controller   
+  		                                                  ^
+
+  warning     comma-dangle     Unexpected trailing comma           
+  Line:22:6
+      },
+        ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:12:1
+     
+   ^
+
+  warning    no-unused-vars    'helper' is defined but never used  
+  Line:14:57
+      onExpenseSelectedEvent : function(component, event, helper) {
+                                                           ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:20:1
+          
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:17:1
+                  
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:23:1
+      
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:15:1
+         
+   ^
+
+  error        no-console      Unexpected console statement        
+  Line:16:9
+          console.log("ExpenseItemListController.onExpenseSelectedEvent: entered");
+           ^
+
+  error         no-alert       Unexpected alert                    
+  Line:19:9
+          alert("Handled the Expense Selected Event!");
+           ^
+
+  error        no-console      Unexpected console statement        
+  Line:5:9
+          console.log("ExpenseItemListController.doInit: entered");
+           ^
+
+  error        no-console      Unexpected console statement        
+  Line:21:9
+          console.log("ExpenseItemListController.onExpenseSelectedEvent: exit");
+           ^
+
+  error        no-console      Unexpected console statement        
+  Line:10:9
+          console.log("ExpenseItemListController.doInit: exit");
+           ^
+
+
+✖ 15 problems (5 errors, 10 warnings)
+
+FILE: /Users/pchittum/Stuff/git/lcf-16/metadata/aura/ExpenseItemList/ExpenseItemListHelper.js:
+
+  warning  no-trailing-spaces  Trailing spaces not allowed       
+  Line:20:1
+  		
+  	^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed       
+  Line:13:1
+          
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed       
+  Line:16:1
+              
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed       
+  Line:18:1
+              
+   ^
+
+  warning    no-unused-vars    'self' is defined but never used  
+  Line:11:13
+          var self = this;
+               ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed       
+  Line:26:7
+      },  
+         ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed       
+  Line:28:84
+          //Reset the value of the component list attribute with the records returned 
+                                                                                      ^
+
+  error        no-console      Unexpected console statement      
+  Line:24:9
+          console.log("ExpenseItemListHelper.getAccountList: exit");
+           ^
+
+  error       secure-window    Invalid SecureWindow API          
+  Line:29:9
+          component.set("v.expenses", actionResult.getReturnValue());
+           ^
+
+  error        no-console      Unexpected console statement      
+  Line:5:9
+          console.log("ExpenseItemListHelper.getExpenseList: entered");
+           ^
+
+  error         no-undef       'component' is not defined        
+  Line:29:9
+          component.set("v.expenses", actionResult.getReturnValue());
+           ^
+
+
+✖ 11 problems (4 errors, 7 warnings)
+
+FILE: /Users/pchittum/Stuff/git/lcf-16/metadata/aura/ExpenseListEntry/ExpenseListEntryController.js:
+
+  warning    no-unused-vars    'event' is defined but never used  
+  Line:3:38
+      viewExpense: function(component, event) {
+                                        ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed        
+  Line:6:1
+         
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed        
+  Line:10:1
+         
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed        
+  Line:11:1
+          
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed        
+  Line:18:1
+          
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed        
+  Line:22:1
+         
+   ^
+
+  warning     comma-dangle     Unexpected trailing comma          
+  Line:24:7
+       },
+         ^
+
+  error        no-console      Unexpected console statement       
+  Line:5:9
+          console.log("ExpenseListEntryController.viewExpense: entered");
+           ^
+
+  error        no-console      Unexpected console statement       
+  Line:9:3
+  		console.log("ExpenseListEntryController.viewExpense: expense= "+expense.Name);
+  		 ^
+
+  error        no-console      Unexpected console statement       
+  Line:23:9
+          console.log("ExpenseListEntryController.viewExpense: exit");
+           ^
+
+
+✖ 10 problems (3 errors, 7 warnings)
+
+FILE: /Users/pchittum/Stuff/git/lcf-16/metadata/aura/fileUpload/fileUploadController.js:
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:1:27
+  "use strict"; exports = ({  
+                             ^
+
+  warning    no-unused-vars    'helper' is defined but never used  
+  Line:7:41
+      waiting: function(component, event, helper) {
+                                           ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:8:1
+          
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:13:1
+          
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:6:1
+      
+   ^
+
+  warning    no-unused-vars    'helper' is defined but never used  
+  Line:19:45
+      doneWaiting: function(component, event, helper) {
+                                               ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:25:1
+  		        
+  	^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:29:1
+      
+   ^
+
+  warning    no-unused-vars    'helper' is defined but never used  
+  Line:30:42
+      setFocus: function(component, event, helper) {
+                                            ^
+
+  warning     comma-spacing    A space is required after ','       
+  Line:33:32
+      	component.set('v.parentId',parId);
+      	                           ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:18:1
+      
+   ^
+
+
+✖ 11 problems (0 errors, 11 warnings)
+
+FILE: /Users/pchittum/Stuff/git/lcf-16/metadata/aura/fileUpload/fileUploadHelper.js:
+
+  error    Parsing error: Invalid number  
+  Line:2:24
+      MAX_FILE_SIZE: 750 000, /* 1 000 000 * 3/4 to account for base64 */
+                          ^
+
+
+✖ 1 problem (1 error, 0 warnings)
+
+FILE: /Users/pchittum/Stuff/git/lcf-16/metadata/aura/SearchBar/SearchBarController.js:
+
+  warning  no-unused-vars  'helper' is defined but never used  
+  Line:2:49
+      searchKeyChange: function(component, event, helper) {
+                                                   ^
+
+
+✖ 1 problem (0 errors, 1 warning)
+
+FILE: /Users/pchittum/Stuff/git/lcf-16/metadata/aura/SimpleDonutChart/SimpleDonutChartController.js:
+
+  warning    no-unused-vars    'helper' is defined but never used  
+  Line:2:37
+  	doInit: function(component, event, helper) {
+  	                                    ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:8:91
+  		// that the backend is Lightning Connect (OData) brings in some limitations for the time 
+  		                                                                                         ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:11:42
+  		// might be the next place I take this. 
+  		                                        ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:33:12
+  			default: 
+  			         ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:36:11
+  				break;				
+  				      	^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:4:1
+  		
+  	^
+
+  warning     comma-spacing    A space is required after ','       
+  Line:46:32
+  			component.set('v.chartValue',respData['item-count']);
+  			                             ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:43:68
+  			//owing to the event handler on change of chart value, assign to 
+  			                                                                 ^
+
+  warning     comma-spacing    A space is required after ','       
+  Line:45:27
+  			component.set('v.total',respData['total-item-count']);
+  			                        ^
+
+  warning     comma-spacing    A space is required after ','       
+  Line:39:26
+  		action.setCallback(this,function(resp){
+  		                        ^
+
+  error        no-console      Unexpected console statement        
+  Line:42:4
+  			console.log('inCallback');
+  			 ^
+
+  error        no-console      Unexpected console statement        
+  Line:50:3
+  		console.log('is this action exclusive?');
+  		 ^
+
+  error        no-console      Unexpected console statement        
+  Line:51:3
+  		console.log(action.isExclusive());
+  		 ^
+
+
+✖ 13 problems (3 errors, 10 warnings)
+
+FILE: /Users/pchittum/Stuff/git/lcf-16/metadata/aura/SimpleDonutChart/SimpleDonutChartHelper.js:
+
+  warning       camelcase      Identifier 'new_degrees' is not in camel case     
+  Line:7:2
+  	new_degrees: 0,
+  	 ^
+
+  warning     comma-spacing    A space is required after ','                     
+  Line:55:30
+  		this.drawText(this.H,this.W,text,this.color);
+  		                            ^
+
+  warning     comma-spacing    A space is required after ','                     
+  Line:55:35
+  		this.drawText(this.H,this.W,text,this.color);
+  		                                 ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed                       
+  Line:63:48
+  		doesn't step on the others of each component. 
+  		                                              ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed                       
+  Line:65:60
+  		my current thinking is something along the lines of this: 
+  		                                                          ^
+
+  warning     comma-spacing    A space is required after ','                     
+  Line:55:23
+  		this.drawText(this.H,this.W,text,this.color);
+  		                     ^
+
+  warning     comma-spacing    A space is required after ','                     
+  Line:118:25
+  	drawBGDonut: function(H,W){
+  	                        ^
+
+  warning       camelcase      Identifier 'text_width' is not in camel case      
+  Line:116:33
+  		this.ctx.fillText(text, W/2 - text_width/2, H/2 + 15);
+  		                               ^
+
+  warning       camelcase      Identifier 'new_degrees' is not in camel case     
+  Line:77:8
+  		this.new_degrees = this.convertToDegrees(this.total,this.value);
+  		      ^
+
+  warning     comma-spacing    A space is required after ','                     
+  Line:77:54
+  		this.new_degrees = this.convertToDegrees(this.total,this.value);
+  		                                                    ^
+
+  warning       camelcase      Identifier 'animation_loop' is not in camel case  
+  Line:9:2
+  	animation_loop: {},
+  	 ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed                       
+  Line:54:1
+  		
+  	^
+
+  warning       camelcase      Identifier 'text_width' is not in camel case      
+  Line:115:7
+  		var text_width = this.ctx.measureText(text).width;
+  		     ^
+
+  warning     comma-spacing    A space is required after ','                     
+  Line:41:50
+  		this.degrees = this.convertToDegrees(this.total,this.value);
+  		                                                ^
+
+  warning     comma-spacing    A space is required after ','                     
+  Line:112:29
+  	drawText: function(H,W,text,color){
+  	                            ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed                       
+  Line:40:63
+  		//get relative degrees of drawn arc from the total and value 
+  		                                                             ^
+
+  warning       camelcase      Identifier 'animation_loop' is not in camel case  
+  Line:83:9
+  			this.animation_loop = setInterval(this.animate_to,1000/this.difference);
+  			      ^
+
+  warning     comma-spacing    A space is required after ','                     
+  Line:38:26
+  		this.drawBGDonut(this.H,this.W);
+  		                        ^
+
+  warning     comma-spacing    A space is required after ','                     
+  Line:83:53
+  			this.animation_loop = setInterval(this.animate_to,1000/this.difference);
+  			                                                  ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed                       
+  Line:36:1
+  		
+  	^
+
+  warning     comma-spacing    A space is required after ','                     
+  Line:112:24
+  	drawText: function(H,W,text,color){
+  	                       ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed                       
+  Line:29:44
+  		//this.draw();//not ready for prime time. 
+  		                                          ^
+
+  warning       camelcase      Identifier 'animate_to' is not in camel case      
+  Line:87:2
+  	animate_to: function(){
+  	 ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed                       
+  Line:13:90
+  //	fontFam: 'ProximaNovaSoft-Regular,verdana,sans-serif',//does not seem to like strings! 
+    	                                                                                       ^
+
+  warning     comma-spacing    A space is required after ','                     
+  Line:112:22
+  	drawText: function(H,W,text,color){
+  	                     ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed                       
+  Line:68:56
+  		- assign myFunc to setInterval...and see how it goes. 
+  		                                                      ^
+
+  warning     comma-spacing    A space is required after ','                     
+  Line:125:34
+  	convertToDegrees: function(total,num){
+  	                                 ^
+
+  error        no-console      Unexpected console statement                      
+  Line:91:4
+  			console.log('equal');
+  			 ^
+
+  error        no-console      Unexpected console statement                      
+  Line:98:4
+  			console.log('degrees is less');
+  			 ^
+
+  error        no-console      Unexpected console statement                      
+  Line:101:4
+  			console.log('degrees is more');
+  			 ^
+
+  error        no-console      Unexpected console statement                      
+  Line:88:3
+  		console.log('animate_to');
+  		 ^
+
+  error         aura-api       Invalid Aura API                                  
+  Line:92:4
+  			$A.run(function(){
+  			 ^
+
+  error        no-console      Unexpected console statement                      
+  Line:82:4
+  			console.log('setting interval');
+  			 ^
+
+  error         aura-api       Invalid Aura API                                  
+  Line:81:3
+  		$A.run(function(){
+  		 ^
+
+  error        no-console      Unexpected console statement                      
+  Line:72:5
+  				console.log('clearing interval');
+  				 ^
+
+  error         aura-api       Invalid Aura API                                  
+  Line:71:4
+  			$A.run(function(){
+  			 ^
+
+  error        no-console      Unexpected console statement                      
+  Line:78:3
+  		console.log('new degrees is: ' + this.new_degrees.toString());
+  		 ^
+
+  error        no-console      Unexpected console statement                      
+  Line:84:4
+  			console.log(this.animation_loop);
+  			 ^
+
+
+✖ 38 problems (11 errors, 27 warnings)
+
+FILE: /Users/pchittum/Stuff/git/lcf-16/metadata/aura/SimpleDonutChart/SimpleDonutChartRenderer.js:
+
+FILE: /Users/pchittum/Stuff/git/lcf-16/metadata/aura/SingleAccountTest/SingleAccountTestController.js:
+
+  warning    no-unused-vars    'helper' is defined but never used  
+  Line:2:38
+  	doInit : function(component, event, helper) {
+  	                                     ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:5:1
+          
+   ^
+
+  warning     comma-spacing    A space is required after ','       
+  Line:6:39
+          fetchAccount.setParam('acctId','00124000003c9qQ');
+                                         ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:7:1
+          
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:27:1
+                  
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:13:1
+                      
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:15:1
+                      
+   ^
+
+  warning     comma-spacing    A space is required after ','       
+  Line:18:52
+                      component.set('v.accountRecord',acct);
+                                                      ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:3:1
+          
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:17:1
+                      
+   ^
+
+  warning     comma-spacing    A space is required after ','       
+  Line:28:10
+          },'ALL');
+            ^
+
+  warning         semi         Missing semicolon                   
+  Line:16:43
+                      console.log(acct.Name)
+                                             ^
+
+  error        no-console      Unexpected console statement        
+  Line:16:21
+                      console.log(acct.Name)
+                       ^
+
+  error        no-console      Unexpected console statement        
+  Line:20:21
+                      console.log('request failed');
+                       ^
+
+  error        no-console      Unexpected console statement        
+  Line:21:21
+                      console.log(resp);
+                       ^
+
+  error        no-console      Unexpected console statement        
+  Line:22:21
+                      console.log(resp.error[0]);
+                       ^
+
+  error        no-console      Unexpected console statement        
+  Line:25:17
+                  console.log('component unavailable on callback');
+                   ^
+
+  error        no-console      Unexpected console statement        
+  Line:12:21
+                      console.log('callback success and component is valid');
+                       ^
+
+
+✖ 18 problems (6 errors, 12 warnings)
+
+FILE: /Users/pchittum/Stuff/git/lcf-16/metadata/aura/TestComponent/TestComponentController.js:
+
+FILE: /Users/pchittum/Stuff/git/lcf-16/metadata/aura/TestComponent/TestComponentHelper.js:
+
+  warning  no-unused-vars  'helper' is defined but never used  
+  Line:2:44
+  getAllContacts: function(component, event, helper){
+                                              ^
+
+  warning       semi       Missing semicolon                   
+  Line:8:7
+      })
+         ^
+
+
+✖ 2 problems (0 errors, 2 warnings)
+
+FILE: /Users/pchittum/Stuff/git/lcf-16/metadata/aura/Wobble/WobbleController.js:
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:1:27
+  "use strict"; exports = ({ 
+                             ^
+
+  warning     comma-spacing    A space is required after ','       
+  Line:11:28
+  		component.set('v.doEvent','DeviceOrientation');
+  		                          ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:14:64
+          //event handler for button on UI. we also need a way to 
+                                                                  ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:16:64
+          //in the end I found most consistent results by doing a 
+                                                                  ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:17:1
+          
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:10:72
+          //only once I got this working I lost interest in DeviceMotion. 
+                                                                          ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:53:73
+  		//clean up the window event listener when we go somewhere else in app. 
+  		                                                                       ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:52:1
+  		
+  	^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:25:1
+  		
+  	^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:29:1
+  		
+  	^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:34:1
+  		
+  	^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:7:1
+          
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:41:1
+  		
+  	^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:4:1
+          
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:50:1
+  		
+  	^
+
+  warning    no-unused-vars    'helper' is defined but never used  
+  Line:21:45
+  	changeLocation: function(component, event, helper){	
+  	                                            ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:59:3
+  	} 
+  	  ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:21:53
+  	changeLocation: function(component, event, helper){	
+  	                                                   	^
+
+  error         no-alert       Unexpected alert                    
+  Line:22:9
+          window.alert('something is calling changeLocation that shouldn not');
+           ^
+
+  error        no-console      Unexpected console statement        
+  Line:3:9
+          console.log('currently in init');
+           ^
+
+
+✖ 20 problems (2 errors, 18 warnings)
+
+FILE: /Users/pchittum/Stuff/git/lcf-16/metadata/aura/Wobble/WobbleHelper.js:
+
+  warning         semi         Missing semicolon                     
+  Line:61:75
+             console.log('found no active component. nothing to clean up. ')
+                                                                             ^
+
+  warning         semi         Missing semicolon                     
+  Line:21:4
+  		}
+  		  ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed           
+  Line:23:37
+  	wobbleWrapUp : function(component){	
+  	                                   	^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed           
+  Line:58:1
+              
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed           
+  Line:26:1
+          
+   ^
+
+  warning     comma-spacing    A space is required after ','         
+  Line:19:34
+  				component.set('v.doDirection',Math.round(eventData.alpha));
+  				                              ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed           
+  Line:29:49
+              clearInterval(component.intervalId); 
+                                                   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed           
+  Line:5:36
+  			in order to have an identifiable 
+  			                                 ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed           
+  Line:34:1
+              
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed           
+  Line:37:1
+              
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed           
+  Line:44:1
+              
+   ^
+
+  warning     comma-spacing    A space is required after ','         
+  Line:18:31
+  				component.set('v.doTiltFB',Math.round(eventData.beta));
+  				                           ^
+
+  warning    no-unused-vars    'wob' is defined but never used       
+  Line:47:25
+                      var wob = a.getReturnValue();
+                           ^
+
+  warning     comma-spacing    A space is required after ','         
+  Line:17:31
+  				component.set('v.doTiltLR',Math.round(eventData.gamma));
+  				                           ^
+
+  warning     comma-spacing    A space is required after ','         
+  Line:57:14
+              },'ALL');
+                ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed           
+  Line:14:73
+              //we are placing this function to run outside the normal LCF 
+                                                                           ^
+
+  warning     comma-spacing    A space is required after ','         
+  Line:55:62
+                      var isActive = component.set('v.isActive',false);
+                                                                ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed           
+  Line:9:100
+  			of the c:Wobble component goes away, so we must re invoke and get the latest instance each init. 
+  			                                                                                                 ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed           
+  Line:53:63
+                  //really I should be firing off an event here.  
+                                                                 ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed           
+  Line:7:83
+  			the whole purpose of this function is to create a closure around the component. 
+  			                                                                                ^
+
+  warning    no-unused-vars    'isActive' is defined but never used  
+  Line:55:25
+                      var isActive = component.set('v.isActive',false);
+                           ^
+
+  warning     comma-spacing    A space is required after ','         
+  Line:28:59
+              window.removeEventListener('deviceorientation',component.doOrientation);
+                                                             ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed           
+  Line:30:1
+              
+   ^
+
+  error        no-console      Unexpected console statement          
+  Line:50:21
+                      console.log('failed saving wobble');
+                       ^
+
+  error        no-console      Unexpected console statement          
+  Line:48:21
+                      console.log('finished wobble, bye!');
+                       ^
+
+  error        no-console      Unexpected console statement          
+  Line:24:3
+  		console.log('wrapping up wobble');
+  		 ^
+
+  error        no-console      Unexpected console statement          
+  Line:61:12
+             console.log('found no active component. nothing to clean up. ')
+              ^
+
+  error        no-console      Unexpected console statement          
+  Line:3:10
+          	console.log('calling closure factory function');
+          	 ^
+
+
+✖ 28 problems (5 errors, 23 warnings)
+
+FILE: /Users/pchittum/Stuff/git/lcf-16/metadata/aura/Wobble/WobbleRenderer.js:
+
+  warning    no-unused-vars    'helper' is defined but never used  
+  Line:2:39
+      afterRender : function(component, helper){
+                                         ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:25:1
+  			
+  	^
+
+  warning     comma-spacing    A space is required after ','       
+  Line:30:27
+  			component.set('v.start',start);
+  			                        ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:31:1
+  			
+  	^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:24:54
+  			//we assign it as "doOrientation" into the helper. 
+  			                                                   ^
+
+  warning     comma-spacing    A space is required after ','       
+  Line:96:6
+  				},1000);
+  				  ^
+
+  warning     comma-spacing    A space is required after ','       
+  Line:37:57
+  			startWobble.setParams({start:component.get('v.start'),startMS: start.valueOf()});
+  			                                                      ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:39:1
+                  
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:40:42
+                  if (component.isValid()){                
+                                            ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:91:79
+                          //past the lifecycle of the component, we clean it up. 
+                                                                                 ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:21:79
+  			//to enable clean up there must be an identifiable event handler to remove, 
+  			                                                                            ^
+
+  warning     comma-spacing    A space is required after ','       
+  Line:45:51
+                          component.set('v.wobbleId',wob.Id);
+                                                     ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:19:16
+  			//component. 
+  			             ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:78:1
+      
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:18:89
+  			//your component's context are not in operation when the LCF app state cleans up your 
+  			                                                                                      ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:72:57
+                          fb: component.get('v.doTiltFB'), 
+                                                           ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:13:1
+  			
+  	^
+
+  warning     comma-spacing    A space is required after ','       
+  Line:50:47
+                      component.set('v.isActive',true);
+                                                 ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:11:38
+              //Report to UI the event. 
+                                        ^
+
+  warning     comma-spacing    A space is required after ','       
+  Line:52:5
+  			},'ALL');
+  			  ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:10:1
+  			
+  	^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:57:61
+              //TODO: should I be doing this with setCallback? 
+                                                               ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:102:1
+          
+   ^
+
+  warning     comma-spacing    A space is required after ','       
+  Line:59:56
+              window.addEventListener('deviceorientation',component.doOrientation);
+                                                          ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:7:38
+          //nonesense if not supported. 
+                                        ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:63:1
+                      
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:5:1
+          
+   ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:67:1
+                      
+   ^
+
+  warning     comma-spacing    A space is required after ','       
+  Line:100:38
+              component.set('v.doEvent','No Support');
+                                        ^
+
+  warning         semi         Missing semicolon                   
+  Line:105:38
+          console.log('doing unrender')
+                                        ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed         
+  Line:41:1
+                  
+   ^
+
+  error        no-console      Unexpected console statement        
+  Line:82:33
+                                  console.log('Added Motion Measurements!');
+                                   ^
+
+  error        no-console      Unexpected console statement        
+  Line:84:33
+                                  console.log('you failed!');
+                                   ^
+
+  error        no-console      Unexpected console statement        
+  Line:4:9
+          console.log('in after render');
+           ^
+
+  error        no-console      Unexpected console statement        
+  Line:46:25
+                          console.log('wobbleId is: ' + component.get('v.wobbleId'));
+                           ^
+
+  error        no-console      Unexpected console statement        
+  Line:33:4
+  			console.log(start);
+  			 ^
+
+  error        no-console      Unexpected console statement        
+  Line:32:13
+              console.log('this is the start date');
+               ^
+
+  error        no-console      Unexpected console statement        
+  Line:9:13
+              console.log('found DeviceOrientationEvent as object');
+               ^
+
+  error        no-console      Unexpected console statement        
+  Line:105:9
+          console.log('doing unrender')
+           ^
+
+  error        no-console      Unexpected console statement        
+  Line:48:25
+                          console.log('failed saving wobble');
+                           ^
+
+  error        no-console      Unexpected console statement        
+  Line:92:25
+                          console.log('in clear interval ');
+                           ^
+
+
+✖ 41 problems (10 errors, 31 warnings)
+
