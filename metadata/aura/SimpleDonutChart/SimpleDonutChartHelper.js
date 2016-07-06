@@ -4,9 +4,9 @@
 	W: 0,
 	H: 0,
 	degrees: 0,
-	new_degrees: 0,
+	newDegrees: 0,
 	difference: 0,
-	animation_loop: {},
+	animationLoop: {},
 	total: 0,
 	value: 0,
 //	fontSize: '50px',
@@ -33,7 +33,7 @@
 	init: function(){
 		//Clear the canvas everytime a chart is drawn
 		this.ctx.clearRect(0, 0, this.W, this.H);
-		
+
 		//draw background circle
 		this.drawBGDonut(this.H, this.W);
 
@@ -51,14 +51,14 @@
 		this.ctx.stroke();
 
 		var text = Math.floor(this.degrees/360*100) + "%";
-		
+
 		this.drawText(this.H, this.W, text, this.color);
 
 
 	},
 	draw: function(){
 		/*
-		The draw() and animate_to() functions are intended to work to animate the gauge so that it
+		The draw() and animateTo() functions are intended to work to animate the gauge so that it
 		steps up to the value when retrieved. need to work out a way so that one use of setInterval
 		doesn't step on the others of each component.
 
@@ -67,34 +67,34 @@
 		- invoke that locally in draw() as : this.myFunc = this.funcThatReturnsFunc()
 		- assign myFunc to setInterval...and see how it goes.
 		*/
-		if (typeof this.animation_loop != undefined) {
+		if (typeof this.animationLoop != undefined) {
 			$A.run(function(){
 				$A.log('clearing interval');
-				clearInterval(this.animation_loop);
+				clearInterval(this.animationLoop);
 			});
 		}
 
-		this.new_degrees = this.convertToDegrees(this.total, this.value);
-		$A.log('new degrees is: ' + this.new_degrees.toString());
-		this.difference = this.new_degrees - this.degrees;
+		this.newDegrees = this.convertToDegrees(this.total, this.value);
+		$A.log('new degrees is: ' + this.newDegrees.toString());
+		this.difference = this.newDegrees - this.degrees;
 
 		$A.run(function(){
 			$A.log('setting interval');
-			this.animation_loop = setInterval(this.animate_to, 1000/this.difference);
-			$A.log(this.animation_loop);
+			this.animationLoop = setInterval(this.animateTo, 1000/this.difference);
+			$A.log(this.animationLoop);
 		});
 	},
-	animate_to: function(){
-		$A.log('animate_to');
+	animateTo: function(){
+		$A.log('animateTo');
 
-		if (this.degrees === this.new_degrees) {
+		if (this.degrees === this.newDegrees) {
 			$A.log('equal');
 			$A.run(function(){
-				clearInterval(this.animation_loop);
+				clearInterval(this.animationLoop);
 			});
 		}
 
-		if (this.degrees < this.new_degrees){
+		if (this.degrees < this.newDegrees){
 			$A.log('degrees is less');
 			this.degrees = this.degrees + 1;
 		} else {
@@ -112,8 +112,8 @@
 	drawText: function(H, W, text, color){
 		this.ctx.fillStyle = color;
 		this.ctx.font = '50px ProximaNovaSoft-Regular,verdana,sans-serif';
-		var text_width = this.ctx.measureText(text).width;
-		this.ctx.fillText(text, W/2 - text_width/2, H/2 + 15);
+		var textWidth = this.ctx.measureText(text).width;
+		this.ctx.fillText(text, W/2 - textWidth/2, H/2 + 15);
 	},
 	drawBGDonut: function(H, W){
 		this.ctx.beginPath();
