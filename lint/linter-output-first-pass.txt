@@ -1,0 +1,163 @@
+[32m'Search for "**/*.js" in folder "metadata/aura"'[39m
+[32m' -> Ignoring: **/node_modules/**,**/jsdoc/**,**/htdocs/**,**/invalidTest/**,**/purposelyInvalid/**,**/invalidTestData/**,**/validationTest/**,**/lintTest/**,**/target/**,**/parseError/**,**/*.junk.js,**/*_mock?.js'[39m
+Found 19 matching files.
+----------------
+FILE: /Users/pchittum/Stuff/git/lcf-linting-practice/metadata/aura/AccountViewEdit/AccountViewEditController.js:
+
+FILE: /Users/pchittum/Stuff/git/lcf-linting-practice/metadata/aura/ActionServiceStudy1/ActionServiceStudy1Controller.js:
+
+FILE: /Users/pchittum/Stuff/git/lcf-linting-practice/metadata/aura/ContactList/ContactListController.js:
+
+FILE: /Users/pchittum/Stuff/git/lcf-linting-practice/metadata/aura/ExpenseCard/ExpenseCardController.js:
+
+  error  no-script-url  Script URL is a form of eval  
+  Line:11:20
+          var link = "javascript:sforce.one.navigateToSObject("+expense.Id+")";
+                      ^
+
+
+✖ 1 problem (1 error, 0 warnings)
+
+FILE: /Users/pchittum/Stuff/git/lcf-linting-practice/metadata/aura/ExpenseItemList/ExpenseItemListController.js:
+
+  error  no-alert  Unexpected alert  
+  Line:19:9
+          alert("Handled the Expense Selected Event!");
+           ^
+
+
+✖ 1 problem (1 error, 0 warnings)
+
+FILE: /Users/pchittum/Stuff/git/lcf-linting-practice/metadata/aura/ExpenseItemList/ExpenseItemListHelper.js:
+
+  error  secure-window  Invalid SecureWindow API    
+  Line:29:9
+          component.set("v.expenses", actionResult.getReturnValue());
+           ^
+
+  error     no-undef    'component' is not defined  
+  Line:29:9
+          component.set("v.expenses", actionResult.getReturnValue());
+           ^
+
+
+✖ 2 problems (2 errors, 0 warnings)
+
+FILE: /Users/pchittum/Stuff/git/lcf-linting-practice/metadata/aura/ExpenseListEntry/ExpenseListEntryController.js:
+
+FILE: /Users/pchittum/Stuff/git/lcf-linting-practice/metadata/aura/fileUpload/fileUploadController.js:
+
+FILE: /Users/pchittum/Stuff/git/lcf-linting-practice/metadata/aura/fileUpload/fileUploadHelper.js:
+
+  error    Parsing error: Invalid number  
+  Line:2:24
+      MAX_FILE_SIZE: 750 000, /* 1 000 000 * 3/4 to account for base64 */
+                          ^
+
+
+✖ 1 problem (1 error, 0 warnings)
+
+FILE: /Users/pchittum/Stuff/git/lcf-linting-practice/metadata/aura/SearchBar/SearchBarController.js:
+
+FILE: /Users/pchittum/Stuff/git/lcf-linting-practice/metadata/aura/SimpleDonutChart/SimpleDonutChartController.js:
+
+FILE: /Users/pchittum/Stuff/git/lcf-linting-practice/metadata/aura/SimpleDonutChart/SimpleDonutChartHelper.js:
+
+  warning       camelcase      Identifier 'new_degrees' is not in camel case     
+  Line:7:2
+  	new_degrees: 0,
+  	 ^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed                       
+  Line:36:1
+  		
+  	^
+
+  warning  no-trailing-spaces  Trailing spaces not allowed                       
+  Line:54:1
+  		
+  	^
+
+  warning       camelcase      Identifier 'text_width' is not in camel case      
+  Line:115:7
+  		var text_width = this.ctx.measureText(text).width;
+  		     ^
+
+  warning       camelcase      Identifier 'new_degrees' is not in camel case     
+  Line:77:8
+  		this.new_degrees = this.convertToDegrees(this.total, this.value);
+  		      ^
+
+  warning       camelcase      Identifier 'animation_loop' is not in camel case  
+  Line:9:2
+  	animation_loop: {},
+  	 ^
+
+  warning       camelcase      Identifier 'animation_loop' is not in camel case  
+  Line:83:9
+  			this.animation_loop = setInterval(this.animate_to, 1000/this.difference);
+  			      ^
+
+  warning       camelcase      Identifier 'animate_to' is not in camel case      
+  Line:87:2
+  	animate_to: function(){
+  	 ^
+
+  warning       camelcase      Identifier 'text_width' is not in camel case      
+  Line:116:33
+  		this.ctx.fillText(text, W/2 - text_width/2, H/2 + 15);
+  		                               ^
+
+  error         aura-api       Invalid Aura API                                  
+  Line:92:4
+  			$A.run(function(){
+  			 ^
+
+  error         aura-api       Invalid Aura API                                  
+  Line:71:4
+  			$A.run(function(){
+  			 ^
+
+  error         aura-api       Invalid Aura API                                  
+  Line:81:3
+  		$A.run(function(){
+  		 ^
+
+
+✖ 12 problems (3 errors, 9 warnings)
+
+FILE: /Users/pchittum/Stuff/git/lcf-linting-practice/metadata/aura/SimpleDonutChart/SimpleDonutChartRenderer.js:
+
+FILE: /Users/pchittum/Stuff/git/lcf-linting-practice/metadata/aura/SingleAccountTest/SingleAccountTestController.js:
+
+FILE: /Users/pchittum/Stuff/git/lcf-linting-practice/metadata/aura/TestComponent/TestComponentController.js:
+
+FILE: /Users/pchittum/Stuff/git/lcf-linting-practice/metadata/aura/TestComponent/TestComponentHelper.js:
+
+FILE: /Users/pchittum/Stuff/git/lcf-linting-practice/metadata/aura/Wobble/WobbleController.js:
+
+  error  no-alert  Unexpected alert  
+  Line:22:9
+          window.alert('something is calling changeLocation that shouldn not');
+           ^
+
+
+✖ 1 problem (1 error, 0 warnings)
+
+FILE: /Users/pchittum/Stuff/git/lcf-linting-practice/metadata/aura/Wobble/WobbleHelper.js:
+
+  warning  no-unused-vars  'wob' is defined but never used       
+  Line:47:25
+                      var wob = a.getReturnValue();
+                           ^
+
+  warning  no-unused-vars  'isActive' is defined but never used  
+  Line:55:25
+                      var isActive = component.set('v.isActive', false);
+                           ^
+
+
+✖ 2 problems (0 errors, 2 warnings)
+
+FILE: /Users/pchittum/Stuff/git/lcf-linting-practice/metadata/aura/Wobble/WobbleRenderer.js:
+

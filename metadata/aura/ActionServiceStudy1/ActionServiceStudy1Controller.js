@@ -1,23 +1,22 @@
 ({
-	doInit : function(component, event, helper) {
-        
-        console.log('entered init');
-        
-		
+	doInit : function(component) {
+
+        $A.log('entered init');
+
         var action = component.get("c.getExpenses");
-        
-        var self = this;
-        
+
+        //var self = this;
+
         action.setCallback(this, function(actionResult){
-            console.log('entered callback');
-            
+            $A.log('entered callback');
+
             var respData = actionResult.getReturnValue();
-            
-            component.set('v.expenses',respData);
-            
+
+            component.set('v.expenses', respData);
+
         });
-        
+
         $A.enqueueAction(action);
-        
+
 	}
 })
