@@ -1,9 +1,9 @@
 ({
        //This is the event handler to select an expense
-    onExpenseSelectedEvent : function(component) {
+    onExpenseSelectedEvent : function(component, event) {
         $A.log("ExpenseCardController.onExpenseSelectedEvent: entered");
-        var expense = event.getParams().expense;
-        $A.log("ExpenseCardController received msg = "+event.getParams().msg+" acct= "+expense.Name);
+        var expense = event.getParam('expense');
+        $A.log("ExpenseCardController received msg = "+event.getParams('msg')+" acct= "+expense.Name);
         $A.log("ExpenseCardController component = "+component);
 
         component.set("v.expense", expense);

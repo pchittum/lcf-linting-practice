@@ -5,7 +5,9 @@
 
         //probably should test for this on init and just stop the whole
         //nonesense if not supported.
-		if (window.DeviceOrientationEvent){
+
+        //LockerNote: cannot detect deviceorientation through SecureWindow
+		//if (window.DeviceOrientationEvent || true){
             $A.log('found DeviceOrientationEvent as object');
 
             //Report to UI the event.
@@ -56,10 +58,11 @@
 
             //TODO: should I be doing this with setCallback?
             //set event handler for device orientation data
+            //LockerNote: this works fine as is in locker service
             window.addEventListener('deviceorientation', component.doOrientation);
 
             //set measurements of device orientation data
-            component.intervalId = setInterval(function(){
+            component.intervalId = setInterval($A.getCallback(function(){
 
             var interval = component.intervalId;
 
@@ -73,8 +76,10 @@
                         dir: component.get('v.doDirection'),
                         wobId: component.get('v.wobbleId')
                     });
+
                 //defer until something else gets enqueued and sent to server
-                measure.setCaboose();
+                //LockerNote: not supported with locker service
+                //measure.setCaboose();
 
                 //doesn't appear to be called...must ask about this
                 measure.setCallback(this, function(a){
@@ -93,12 +98,13 @@
                         clearInterval(interval);
                     }
 
-				}, 1000);
+				}), 1000);
 			//});
 
-        } else {
-            component.set('v.doEvent', 'No Support');
-        }
+        //} else {
+        //    $A.log('No support for Device Orientation');
+        //    component.set('v.doEvent', 'No Support');
+        //}
 
     },
     unrender : function(component, helper){

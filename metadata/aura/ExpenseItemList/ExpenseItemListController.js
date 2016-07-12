@@ -1,6 +1,7 @@
 ({
     //Initialize the view and fetch the list of expenses on load
-    doInit : function(component, helper) {
+    //fixed function params: added back in event and helper
+    doInit : function(component, event, helper) {
 
         $A.log("ExpenseItemListController.doInit: entered");
 
