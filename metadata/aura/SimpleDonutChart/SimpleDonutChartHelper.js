@@ -57,6 +57,7 @@
 
 	},
 	draw: function(){
+		//CURRENTLY NOT USED
 		/*
 		The draw() and animateTo() functions are intended to work to animate the gauge so that it
 		steps up to the value when retrieved. need to work out a way so that one use of setInterval
@@ -68,30 +69,23 @@
 		- assign myFunc to setInterval...and see how it goes.
 		*/
 		if (typeof this.animationLoop != undefined) {
-			$A.run(function(){
-				$A.log('clearing interval');
-				clearInterval(this.animationLoop);
-			});
+			clearInterval(this.animationLoop);
 		}
 
 		this.newDegrees = this.convertToDegrees(this.total, this.value);
 		$A.log('new degrees is: ' + this.newDegrees.toString());
 		this.difference = this.newDegrees - this.degrees;
 
-		$A.run(function(){
-			$A.log('setting interval');
-			this.animationLoop = setInterval(this.animateTo, 1000/this.difference);
-			$A.log(this.animationLoop);
-		});
+		$A.log('setting interval');
+		this.animationLoop = setInterval(this.animateTo, 1000/this.difference);
+		$A.log(this.animationLoop);
 	},
 	animateTo: function(){
 		$A.log('animateTo');
 
 		if (this.degrees === this.newDegrees) {
 			$A.log('equal');
-			$A.run(function(){
-				clearInterval(this.animationLoop);
-			});
+			clearInterval(this.animationLoop);
 		}
 
 		if (this.degrees < this.newDegrees){

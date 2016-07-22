@@ -46,9 +46,9 @@
 			component.set('v.chartValue', respData['item-count']);
 
 		});
-		action.setExclusive(false);
-		$A.log('is this action exclusive?');
-		$A.log(action.isExclusive());
+		//action.setExclusive(false);
+		//$A.log('is this action exclusive?');
+		//$A.log(action.isExclusive());
 		$A.enqueueAction(action);
 	},
 	redrawChart: function(component, event, helper){
